@@ -4,7 +4,8 @@ param
 (
     $source,
     $destination,
-    [switch]$verbose
+    [switch]$verbose,
+    [switch]$removeexisting
 )
 $dir1 = $source
 $dir2 = $destination
@@ -42,8 +43,12 @@ function Get-FileMatches($sourcedir, $targetdir, $filter)
             $targetsize = (Get-Item -Path $founditem.FullName).Length
             if ($sourcehash.Hash -eq $targethash.Hash)
             {
-                #Write-Host "Match: $($sourcefile.FullName) IS $($founditem.FullName)" -ForegroundColor Green
                 $hashmatch = $true
+                if ($removeexisting)
+                {
+                    Write-Host "Removing $($sourcefile.FullName)" -ForegroundColor Green
+                    Remove-Item -Path $sourcefile.FullName -Force
+                }
                 break
             }
             elseif ($sourceSize -eq $targetsize) {
