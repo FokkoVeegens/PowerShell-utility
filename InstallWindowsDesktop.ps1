@@ -45,6 +45,10 @@ choco install spotify -y
 choco install teamviewer -y
 choco install vmware-horizon-client -y
 choco install whatsapp -y
+choco install docker-desktop -y
+
+Enable-WindowsOptionalFeature -Online -FeatureName containers -All -NoRestart
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
 
 # Install VS Code extensions
 Set-Alias -Name code -Value "$env:LOCALAPPDATA\Programs\Microsoft VS Code\code.exe"
