@@ -78,6 +78,9 @@ code --install-extension ms-vsts.team
 
 # Other settings
 
+## Set Visual Studio Code as default editor for PowerShell
+Set-ItemProperty -path Registry::HKEY_CLASSES_ROOT\Microsoft.PowerShellScript.1\Shell\Edit\Command -name "(Default)" -value "`"C:\Program Files\Microsoft VS Code\Code.exe`" `"%1`""
+
 ## Show file extensions
 Push-Location
 Set-Location HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
