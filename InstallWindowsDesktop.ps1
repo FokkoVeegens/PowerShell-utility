@@ -46,6 +46,7 @@ choco install teamviewer -y
 choco install vmware-horizon-client -y
 choco install whatsapp -y
 choco install docker-desktop -y
+choco install nodejs-lts -y
 
 Enable-WindowsOptionalFeature -Online -FeatureName containers -All -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
