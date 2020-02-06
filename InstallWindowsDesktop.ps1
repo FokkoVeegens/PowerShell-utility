@@ -18,6 +18,7 @@ choco install rdcman -y
 choco install firefox -y
 choco install git.install -y
 choco install googlechrome -y
+choco install microsoft-edge -y
 choco install 7zip -y
 choco install microsoft-teams.install -y
 choco install sql-server-management-studio -y
