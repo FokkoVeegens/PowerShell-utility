@@ -12,7 +12,7 @@ choco install dotnetcore-sdk --version=2.2.402 -y
 choco upgrade dotnetcore-sdk -y
 choco install azure-cli -y
 choco install javaruntime -y
-choco install azurepowershell -y
+choco install az.powershell -y
 choco install vscode -y
 choco install rdcman -y
 choco install firefox -y
