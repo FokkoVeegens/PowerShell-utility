@@ -49,6 +49,10 @@ choco install whatsapp -y
 choco install docker-desktop -y
 choco install nodejs-lts -y
 
+choco pin add -n=snagit
+choco pin add -n=microsoft-teams.install
+choco pin add -n=microsoft-edge
+
 Enable-WindowsOptionalFeature -Online -FeatureName containers -All -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
 
