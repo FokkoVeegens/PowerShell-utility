@@ -1,17 +1,15 @@
 $ErrorActionPreference = "Stop"
 
 # Install chocolatey
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Just to be sure, create an alias to the path to choco.exe
 Set-Alias -Name choco -Value C:\ProgramData\chocolatey\bin\choco.exe
 
 # Install software to your requirements (check https://chocolatey.org for details)
 choco install netfx-4.8-devpack -y
-choco install dotnetcore-sdk --version=2.2.402 -y
 choco upgrade dotnetcore-sdk -y
 choco install azure-cli -y
-choco install javaruntime -y
 choco install az.powershell -y
 choco install vscode -y
 choco install rdcman -y
@@ -31,14 +29,13 @@ choco install visualstudio2019-workload-azure -y
 choco install visualstudio2019-workload-node -y
 choco install visualstudio2019-workload-manageddesktop -y
 choco install visualstudio2019-workload-netcoretools -y
-choco install office365proplus -y
 choco install vsts-sync-migrator -y
 choco install paint.net -y
+choco install irfanview -y
 choco install everything -y
 choco install adobereader -y
 choco install logitech-options -y
 choco install setpoint -y
-choco install powerbi -y
 choco install snagit --version=13.1.1 -y
 choco install sonos-controller -y
 choco install stack -y
@@ -48,6 +45,8 @@ choco install vmware-horizon-client -y
 choco install whatsapp -y
 choco install docker-desktop -y
 choco install nodejs-lts -y
+choco install rufus -y
+choco install vlc -y
 
 choco pin add -n=snagit
 choco pin add -n=microsoft-teams.install
@@ -55,32 +54,6 @@ choco pin add -n=microsoft-edge
 
 Enable-WindowsOptionalFeature -Online -FeatureName containers -All -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
-
-# Install VS Code extensions
-Set-Alias -Name code -Value "$env:LOCALAPPDATA\Programs\Microsoft VS Code\code.exe"
-
-code --install-extension DotJoshJohnson.xml
-code --install-extension eamodio.gitlens
-code --install-extension heaths.vscode-guid
-code --install-extension humao.rest-client
-code --install-extension karigari.chat
-code --install-extension ms-azuretools.vscode-apimanagement
-code --install-extension ms-azuretools.vscode-azureappservice
-code --install-extension ms-azuretools.vscode-azurefunctions
-code --install-extension ms-azuretools.vscode-azurestorage
-code --install-extension ms-azuretools.vscode-cosmosdb
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-vscode-remote.remote-wsl
-code --install-extension ms-vscode.azure-account
-code --install-extension ms-vscode.azurecli
-code --install-extension ms-vscode.csharp
-code --install-extension ms-vscode.powershell
-code --install-extension ms-vscode.vscode-node-azure-pack
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vsliveshare.vsliveshare-audio
-code --install-extension ms-vsliveshare.vsliveshare-pack
-code --install-extension msazurermtools.azurerm-vscode-tools
-code --install-extension ms-vsts.team
 
 # Other settings
 
