@@ -47,6 +47,7 @@ choco install docker-desktop -y
 choco install nodejs-lts -y
 choco install rufus -y
 choco install vlc -y
+choco install firacode-ttf -y
 
 choco pin add -n=snagit
 choco pin add -n=microsoft-teams.install
@@ -118,12 +119,7 @@ az extension add --name azure-devops
 # git config --global http.sslBackend schannel
 
 ## Manual Steps:
-## Download FiraCode font: https://github.com/tonsky/FiraCode/releases/download/1.207/FiraCode_1.207.zip
-## Settings in VS Code
-## "editor.fontSize": 12,
-## "editor.fontLigatures": true,
-## "editor.fontFamily": "Fira Code"
-##
+
 ## INSTALL: 
 ## Office language packs
 ## Visio professional
