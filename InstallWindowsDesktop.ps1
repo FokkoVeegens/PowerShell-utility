@@ -48,6 +48,7 @@ choco install nodejs-lts -y
 choco install rufus -y
 choco install vlc -y
 choco install firacode-ttf -y
+choco install jabra-direct -y
 
 choco pin add -n=snagit
 choco pin add -n=microsoft-teams.install
