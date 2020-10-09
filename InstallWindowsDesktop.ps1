@@ -51,7 +51,7 @@ choco install firacode-ttf -y
 choco install jabra-direct -y
 
 choco pin add -n=snagit
-choco pin add -n=microsoft-teams.install
+choco pin add -n="microsoft-teams.install"
 choco pin add -n=microsoft-edge
 
 Enable-WindowsOptionalFeature -Online -FeatureName containers -All -NoRestart
