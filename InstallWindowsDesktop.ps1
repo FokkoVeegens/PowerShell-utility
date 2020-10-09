@@ -87,21 +87,21 @@ Set-ItemProperty -path HKCU:\Software\Microsoft\Windows\Shell\Bags\1\Desktop -na
 # Pop-Location
 
 ## Set desktop icon spacing - back to windows std
-# Push-Location
-# Set-Location "HKCU:\Control Panel\Desktop\WindowMetrics"
-# Set-ItemProperty . IconSpacing "-1125"
-# Set-ItemProperty . IconVerticalSpacing "-1125"
-# Set-ItemProperty . IconTitleWrap "1"
-# Set-ItemProperty . CaptionHeight "-330"
-# Set-ItemProperty . CaptionWidth "-330"
-# Set-ItemProperty . "Shell Icon Size" "32"
-# Pop-Location
+Push-Location
+Set-Location "HKCU:\Control Panel\Desktop\WindowMetrics"
+Set-ItemProperty . IconSpacing "-1125"
+Set-ItemProperty . IconVerticalSpacing "-1125"
+Set-ItemProperty . IconTitleWrap "1"
+Set-ItemProperty . CaptionHeight "-330"
+Set-ItemProperty . CaptionWidth "-330"
+Set-ItemProperty . "Shell Icon Size" "32"
+Pop-Location
 
 ## Enable task bar icons and grouping - back to windows std
 # Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name TaskbarGlomLevel -Value 0
 
 ## Use big icons - back to windows std
-# Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name TaskbarSmallIcons -Value 0
+Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name TaskbarSmallIcons -Value 0
 
 ## Show taskbar on all displays disabled - back to windows std
 # Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name MMTaskbarEnabled -Value 0
