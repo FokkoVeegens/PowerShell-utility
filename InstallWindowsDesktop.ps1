@@ -125,5 +125,4 @@ az extension add --name azure-devops
 ## Office language packs
 ## Visio professional
 ## Visual Studio Liveshare
-## ultimate racer
 ## Videopad video editor
