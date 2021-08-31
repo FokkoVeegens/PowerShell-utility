@@ -1,3 +1,4 @@
+# Currently only useable for on-prem installations (Azure DevOps Server)
 $coll = "https://servername:8080/tfs/defaultcollection"
 $apiurl = "$coll/_apis"
 $witadminpath = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\witadmin.exe"
