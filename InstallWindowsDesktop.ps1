@@ -50,6 +50,8 @@ choco install vlc -y
 choco install firacode-ttf -y
 choco install jabra-direct -y
 choco install docfx -y
+choco install irfanview -y
+choco install irfanviewplugins -y
 
 choco pin add -n=snagit
 choco pin add -n="microsoft-teams.install"
