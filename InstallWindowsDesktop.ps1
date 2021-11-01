@@ -22,7 +22,6 @@ choco install microsoft-teams.install -y
 choco install sql-server-management-studio -y
 choco install powershell -y
 choco install powershell-core -y
-choco install keepass -y
 choco install visualstudio2019enterprise -y
 choco install visualstudio2019-workload-netweb -y
 choco install visualstudio2019-workload-azure -y
@@ -31,11 +30,9 @@ choco install visualstudio2019-workload-manageddesktop -y
 choco install visualstudio2019-workload-netcoretools -y
 choco install vsts-sync-migrator -y
 choco install paint.net -y
-choco install irfanview -y
 choco install everything -y
 choco install adobereader -y
 choco install logitech-options -y
-choco install setpoint -y
 choco install snagit --version=13.1.1 -y
 choco install sonos-controller -y
 choco install stack -y
@@ -52,6 +49,7 @@ choco install jabra-direct -y
 choco install docfx -y
 choco install irfanview -y
 choco install irfanviewplugins -y
+choco install drawio -y
 
 choco pin add -n=snagit
 choco pin add -n="microsoft-teams.install"
