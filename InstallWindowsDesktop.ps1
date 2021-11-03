@@ -14,7 +14,7 @@ choco install az.powershell -y
 choco install vscode -y
 choco install rdcman -y
 choco install firefox -y
-choco install git.install -y
+choco install git -y
 choco install googlechrome -y
 choco install microsoft-edge -y
 choco install 7zip -y
