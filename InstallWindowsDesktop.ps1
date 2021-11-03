@@ -35,10 +35,8 @@ choco install adobereader -y
 choco install logitech-options -y
 choco install snagit --version=13.1.1 -y
 choco install sonos-controller -y
-choco install stack -y
 choco install spotify -y
 choco install teamviewer -y
-choco install vmware-horizon-client -y
 choco install whatsapp -y
 choco install docker-desktop -y
 choco install nodejs-lts -y
