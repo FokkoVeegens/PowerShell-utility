@@ -22,12 +22,11 @@ choco install microsoft-teams.install -y
 choco install sql-server-management-studio -y
 choco install powershell -y
 choco install powershell-core -y
-choco install visualstudio2019enterprise -y
-choco install visualstudio2019-workload-netweb -y
-choco install visualstudio2019-workload-azure -y
-choco install visualstudio2019-workload-node -y
-choco install visualstudio2019-workload-manageddesktop -y
-choco install visualstudio2019-workload-netcoretools -y
+choco install visualstudio2022enterprise -y
+choco install visualstudio2022-workload-azure -y
+choco install visualstudio2022-workload-manageddesktop -y
+choco install visualstudio2022-workload-netweb -y
+choco install visualstudio2022-workload-node -y
 choco install vsts-sync-migrator -y
 choco install paint.net -y
 choco install everything -y
