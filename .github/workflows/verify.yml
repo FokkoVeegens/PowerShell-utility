@@ -38,4 +38,4 @@ jobs:
         uses: tomwhross/write-good-action@v1.5
         with:
           # Name of Directory to scan with write-good [default is "."]
-          directory: ${{ github.workspace }}
+          directory: .
