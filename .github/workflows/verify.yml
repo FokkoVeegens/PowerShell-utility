@@ -29,7 +29,13 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      # Run check on PowerShell scripts
       - name: PS-Check
-        # You may pin to the exact commit or the version.
-        # uses: SleepySysadmin/github-action-pscheck@2522a32675c0c3447a479b401ef5f14d33f8f7a2
         uses: SleepySysadmin/github-action-pscheck@v0.4.2
+        
+      # Run check on markdown files
+      - name: Lint Markdown
+        uses: tomwhross/write-good-action@v1.5
+        with:
+          # Name of Directory to scan with write-good [default is "."]
+          directory: $GITHUB_WORKSPACE
