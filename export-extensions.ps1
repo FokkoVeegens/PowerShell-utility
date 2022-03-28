@@ -7,9 +7,6 @@ $org = "dev.azure.com/yourorg"
 $protocol = "https://"
 $outputpath = "C:\temp\out.csv"
 
-# extension; publisherid extensionid version
-# contribution; type, properties.name
-
 Class ExtensionContribution {
     [string]$ExtensionId
     [string]$PublisherId
