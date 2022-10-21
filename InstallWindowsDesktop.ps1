@@ -7,46 +7,48 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 Set-Alias -Name choco -Value C:\ProgramData\chocolatey\bin\choco.exe
 
 # Install software to your requirements (check https://chocolatey.org for details)
-choco install netfx-4.8-devpack -y
-choco upgrade dotnetcore-sdk -y
-choco install azure-cli -y
+choco install 7zip -y
+choco install adobereader -y
 choco install az.powershell -y
-choco install vscode -y
-choco install rdcman -y
+choco install azure-cli -y
+choco install docfx -y
+choco install docker-desktop -y
+choco install dotnet-6.0-sdk -y
+choco install dotnetcore-sdk -y
+choco install drawio -y
+choco install everything -y
+choco install firacode -y
 choco install firefox -y
 choco install git -y
 choco install googlechrome -y
+choco install irfanview -y
+choco install irfanviewplugins -y
+choco install jabra-direct -y
 choco install microsoft-edge -y
-choco install 7zip -y
-choco install microsoft-teams.install -y
-choco install sql-server-management-studio -y
+choco install microsoft-teams -y
+choco install netfx-4.8-devpack -y
+choco install nodejs-lts -y
+choco install openshot -y
+choco install paint.net -y
 choco install powershell -y
 choco install powershell-core -y
+choco install rdcman -y
+choco install rufus -y
+choco install snagit --version=13.1.1 -y
+choco install spotify -y
+choco install sql-server-management-studio -y
+choco install teamviewer -y
 choco install visualstudio2022enterprise -y
 choco install visualstudio2022-workload-azure -y
 choco install visualstudio2022-workload-manageddesktop -y
 choco install visualstudio2022-workload-netweb -y
 choco install visualstudio2022-workload-node -y
-choco install vsts-sync-migrator -y
-choco install paint.net -y
-choco install everything -y
-choco install adobereader -y
-choco install logitech-options -y
-choco install snagit --version=13.1.1 -y
-choco install sonos-controller -y
-choco install spotify -y
-choco install teamviewer -y
-choco install whatsapp -y
-choco install docker-desktop -y
-choco install nodejs-lts -y
-choco install rufus -y
 choco install vlc -y
-choco install firacode-ttf -y
-choco install jabra-direct -y
-choco install docfx -y
-choco install irfanview -y
-choco install irfanviewplugins -y
-choco install drawio -y
+choco install vmware-horizon-client -y
+choco install vscode -y
+choco install vsts-sync-migrator -y
+choco install whatsapp -y
+choco install zoomit -y
 
 choco pin add -n=snagit
 choco pin add -n="microsoft-teams.install"
